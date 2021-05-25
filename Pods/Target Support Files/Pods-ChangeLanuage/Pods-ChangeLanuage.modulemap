@@ -1,0 +1,6 @@
+framework module Pods_ChangeLanuage {
+  umbrella header "Pods-ChangeLanuage-umbrella.h"
+
+  export *
+  module * { export * }
+}

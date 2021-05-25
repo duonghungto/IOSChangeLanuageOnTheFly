@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B66DE313D247A21F107355 /* Pods_ChangeLanuage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C86D707DBBE0EA0E3ED940 /* Pods_ChangeLanuage.framework */; };
 		FA52D69A265D13810064BD30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52D699265D13810064BD30 /* AppDelegate.swift */; };
 		FA52D69C265D13810064BD30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52D69B265D13810064BD30 /* SceneDelegate.swift */; };
 		FA52D69E265D13810064BD30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52D69D265D13810064BD30 /* ViewController.swift */; };
 		FA52D6A1265D13810064BD30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA52D69F265D13810064BD30 /* Main.storyboard */; };
 		FA52D6A3265D13820064BD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA52D6A2265D13820064BD30 /* Assets.xcassets */; };
 		FA52D6A6265D13820064BD30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA52D6A4265D13820064BD30 /* LaunchScreen.storyboard */; };
+		FA52D6B5265D14AC0064BD30 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52D6B4265D14AC0064BD30 /* R.generated.swift */; };
+		FA52D6C1265D15F80064BD30 /* SampleLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA52D6C3265D15F80064BD30 /* SampleLocalization.strings */; };
+		FA52D6CA265D17770064BD30 /* LanguageDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52D6C9265D17770064BD30 /* LanguageDefine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		767ACAFFB7B13285A40D65EA /* Pods-ChangeLanuage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangeLanuage.debug.xcconfig"; path = "Target Support Files/Pods-ChangeLanuage/Pods-ChangeLanuage.debug.xcconfig"; sourceTree = "<group>"; };
+		F7C86D707DBBE0EA0E3ED940 /* Pods_ChangeLanuage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChangeLanuage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA52D696265D13810064BD30 /* ChangeLanuage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeLanuage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA52D699265D13810064BD30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA52D69B265D13810064BD30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,19 @@
 		FA52D6A2265D13820064BD30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA52D6A5265D13820064BD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA52D6A7265D13820064BD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA52D6B4265D14AC0064BD30 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		FA52D6BA265D15DE0064BD30 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/Main.strings"; sourceTree = "<group>"; };
+		FA52D6BB265D15DE0064BD30 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FA52D6BD265D15E70064BD30 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		FA52D6BE265D15E70064BD30 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FA52D6BF265D15F30064BD30 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		FA52D6C0265D15F30064BD30 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FA52D6C2265D15F80064BD30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SampleLocalization.strings; sourceTree = "<group>"; };
+		FA52D6C5265D15FB0064BD30 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SampleLocalization.strings; sourceTree = "<group>"; };
+		FA52D6C7265D15FE0064BD30 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/SampleLocalization.strings; sourceTree = "<group>"; };
+		FA52D6C8265D15FF0064BD30 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/SampleLocalization.strings"; sourceTree = "<group>"; };
+		FA52D6C9265D17770064BD30 /* LanguageDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDefine.swift; sourceTree = "<group>"; };
+		FF73EF226398A295BACB50FF /* Pods-ChangeLanuage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangeLanuage.release.xcconfig"; path = "Target Support Files/Pods-ChangeLanuage/Pods-ChangeLanuage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +50,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B66DE313D247A21F107355 /* Pods_ChangeLanuage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9416EA74B13B646501D4C1EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7C86D707DBBE0EA0E3ED940 /* Pods_ChangeLanuage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F85AE4595574044851B748C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				767ACAFFB7B13285A40D65EA /* Pods-ChangeLanuage.debug.xcconfig */,
+				FF73EF226398A295BACB50FF /* Pods-ChangeLanuage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA52D68D265D13810064BD30 = {
 			isa = PBXGroup;
 			children = (
 				FA52D698265D13810064BD30 /* ChangeLanuage */,
 				FA52D697265D13810064BD30 /* Products */,
+				9F85AE4595574044851B748C /* Pods */,
+				9416EA74B13B646501D4C1EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +98,13 @@
 				FA52D699265D13810064BD30 /* AppDelegate.swift */,
 				FA52D69B265D13810064BD30 /* SceneDelegate.swift */,
 				FA52D69D265D13810064BD30 /* ViewController.swift */,
+				FA52D6C9265D17770064BD30 /* LanguageDefine.swift */,
 				FA52D69F265D13810064BD30 /* Main.storyboard */,
 				FA52D6A2265D13820064BD30 /* Assets.xcassets */,
 				FA52D6A4265D13820064BD30 /* LaunchScreen.storyboard */,
+				FA52D6B4265D14AC0064BD30 /* R.generated.swift */,
 				FA52D6A7265D13820064BD30 /* Info.plist */,
+				FA52D6C3265D15F80064BD30 /* SampleLocalization.strings */,
 			);
 			path = ChangeLanuage;
 			sourceTree = "<group>";
@@ -74,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA52D6AA265D13820064BD30 /* Build configuration list for PBXNativeTarget "ChangeLanuage" */;
 			buildPhases = (
+				3095640D09BC02F4383A76CA /* [CP] Check Pods Manifest.lock */,
+				FA52D6B2265D14710064BD30 /* R.Swift */,
 				FA52D692265D13810064BD30 /* Sources */,
 				FA52D693265D13810064BD30 /* Frameworks */,
 				FA52D694265D13810064BD30 /* Resources */,
+				F4308A564B69F4982DC71319 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -108,6 +153,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"vi-VN",
+				ko,
+				ja,
 			);
 			mainGroup = FA52D68D265D13810064BD30;
 			productRefGroup = FA52D697265D13810064BD30 /* Products */;
@@ -125,12 +173,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA52D6A6265D13820064BD30 /* LaunchScreen.storyboard in Resources */,
+				FA52D6C1265D15F80064BD30 /* SampleLocalization.strings in Resources */,
 				FA52D6A3265D13820064BD30 /* Assets.xcassets in Resources */,
 				FA52D6A1265D13810064BD30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3095640D09BC02F4383A76CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChangeLanuage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4308A564B69F4982DC71319 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChangeLanuage/Pods-ChangeLanuage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChangeLanuage/Pods-ChangeLanuage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChangeLanuage/Pods-ChangeLanuage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA52D6B2265D14710064BD30 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/$TARGETNAME/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$TARGETNAME/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA52D692265D13810064BD30 /* Sources */ = {
@@ -140,6 +251,8 @@
 				FA52D69E265D13810064BD30 /* ViewController.swift in Sources */,
 				FA52D69A265D13810064BD30 /* AppDelegate.swift in Sources */,
 				FA52D69C265D13810064BD30 /* SceneDelegate.swift in Sources */,
+				FA52D6B5265D14AC0064BD30 /* R.generated.swift in Sources */,
+				FA52D6CA265D17770064BD30 /* LanguageDefine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +263,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				FA52D6A0265D13810064BD30 /* Base */,
+				FA52D6BA265D15DE0064BD30 /* vi-VN */,
+				FA52D6BD265D15E70064BD30 /* ko */,
+				FA52D6BF265D15F30064BD30 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -158,8 +274,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				FA52D6A5265D13820064BD30 /* Base */,
+				FA52D6BB265D15DE0064BD30 /* vi-VN */,
+				FA52D6BE265D15E70064BD30 /* ko */,
+				FA52D6C0265D15F30064BD30 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FA52D6C3265D15F80064BD30 /* SampleLocalization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA52D6C2265D15F80064BD30 /* en */,
+				FA52D6C5265D15FB0064BD30 /* ja */,
+				FA52D6C7265D15FE0064BD30 /* ko */,
+				FA52D6C8265D15FF0064BD30 /* vi-VN */,
+			);
+			name = SampleLocalization.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -169,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -283,6 +415,7 @@
 		};
 		FA52D6AB265D13820064BD30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767ACAFFB7B13285A40D65EA /* Pods-ChangeLanuage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +434,7 @@
 		};
 		FA52D6AC265D13820064BD30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF73EF226398A295BACB50FF /* Pods-ChangeLanuage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
