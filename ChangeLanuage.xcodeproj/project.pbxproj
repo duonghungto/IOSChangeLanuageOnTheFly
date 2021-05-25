@@ -239,7 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$TARGETNAME/R.generated.swift\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$TARGETNAME/R.generated.swift\"\n\n# run the 'rswift' command to generate the constants file\n\nCODE_TO_REPLACE=\"let hostingBundle = Bundle(for: R.Class.self)\"\nCODE_REPLACEMENT=\"var hostingBundle: Bundle = Bundle(for: R.Class.self)\\n    \\n  static var appLanguageCode: String? {\\n    get {\\n      return UserDefaults.standard.string(forKey: \\\"\"$TARGETNAME\"_R.appLanguageCode\\\")\\n    }\\n    set {\\n      UserDefaults.standard.setValue(newValue, forKey: \\\"\"$TARGETNAME\"_R.appLanguageCode\\\")\\n      UserDefaults.standard.synchronize()\\n      Self.configLanguage()\\n    }\\n  }\\n    \\n  static func configLanguage() {\\n    guard let lang = appLanguageCode,\\n          let langPath = Bundle.main.path(forResource: lang, ofType: \\\"lproj\\\") else {\\n        Self.hostingBundle = Bundle(for: R.Class.self)\\n        return\\n    }\\n      Self.hostingBundle = Bundle(path: langPath)!\\n  }\\n\"\n\n# replace the bundle creation in the generated code\nsed -i '' -e \"s/$CODE_TO_REPLACE/$CODE_REPLACEMENT/g\" \"$SRCROOT/$TARGETNAME/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

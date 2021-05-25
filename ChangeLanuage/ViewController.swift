@@ -28,9 +28,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func didTouchLanguageButtonsAt(_ sender: UIButton) {
-        if let index = languageButtons.firstIndex(of: sender) {
-            let lang = AppLang(rawValue: index)
-            print(lang?.code, lang?.name)
+        if let index = languageButtons.firstIndex(of: sender), let lang = AppLang(rawValue: index) {
+            print(lang.code, lang.name)
+            R.appLanguageCode = lang.code
             fetchData()
         }
     }
