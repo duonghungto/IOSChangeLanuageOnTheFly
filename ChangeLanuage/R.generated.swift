@@ -10,7 +10,30 @@ import UIKit
 /// This `R` struct is generated and contains references to static resources.
 struct R: Rswift.Validatable {
   fileprivate static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap { Locale(identifier: $0) } ?? Locale.current
-  fileprivate static let hostingBundle = Bundle(for: R.Class.self)
+  fileprivate static var hostingBundle: Bundle {
+        return Bundle(for: R.Class.self)
+  }
+    
+  static var appLanguageCode: String? {
+    get {
+      return UserDefaults.standard.string(forKey: "ChangeLanuage_R.appLanguageCode")
+    }
+    set {
+      UserDefaults.standard.setValue(newValue, forKey: "ChangeLanuage_R.appLanguageCode")
+      UserDefaults.standard.synchronize()
+      Self.configLanguage()
+    }
+  }
+    
+  static func configLanguage() {
+    guard let lang = appLanguageCode,
+          let langPath = Bundle.main.path(forResource: lang, ofType: "lproj") else {
+//        Self.hostingBundle = Bundle(for: R.Class.self)
+        return
+    }
+//      Self.hostingBundle = Bundle(path: langPath)!
+  }
+
 
   /// Find first language and bundle for which the table exists
   fileprivate static func localeBundle(tableName: String, preferredLanguages: [String]) -> (Foundation.Locale, Foundation.Bundle)? {

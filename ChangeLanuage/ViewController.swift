@@ -30,14 +30,15 @@ class ViewController: UIViewController {
     @IBAction private func didTouchLanguageButtonsAt(_ sender: UIButton) {
         if let index = languageButtons.firstIndex(of: sender), let lang = AppLang(rawValue: index) {
             print(lang.code, lang.name)
-            R.appLanguageCode = lang.code
+            Bundle.setLanguage(lang.code)
             fetchData()
         }
     }
     
     private func fetchData() {
         contentImage.image = R.image.sampleImage()
-        contentLabel.text = R.string.sampleLocalization.sampleContent()
+        contentLabel.text = R.string.sampleLocalization.sampleContent(preferredLanguages: ["ja"])
+        
     }
 }
 
